@@ -7,5 +7,16 @@ This pattern provides a modern pipeline approach for execution of different type
 Reference: https://microservices.io/patterns/data/saga.html and https://github.com/eventuate-tram/eventuate-tram-core
 
 
+Problem Statement
+Develop distributed mico-services for managing hotel reservations, check-ins, upgrades and potential machine learning integration for seasonal predictions.
+The core ideas used in this blueprint: 
+  CQRS (Command Query Responsibility Segregation) for execution of HTTPs requests
+  Event Sourcing and Event Store for both event notification and event publishing
+  Middleware Pattern - for logging, authenticaion with OpenID, request throttoling
+  Circuit Breaker design - for the request retry mechanisms.
+  Saga choreagrphy methodology to enable peer-to-peer event communication between microservices.
+Python is a primary DSL for this implementation. The FAST Api is a web framerwork for constucting application.  PostgreSQL will be used for event logging in oroder to assure durability of messages.
+  
 
+The services will expose HTTP endpoints to perform CRUD (Create, Read, Update, Delete) operations on hotel reservations, rooms, and customers. These service should handle various business scenarios, such as creating a new reservation, checking room availability, updating reservation details, and deleting a reservation. The service should also manage hotel room details and customer information efficiently.  The Saga 
 
