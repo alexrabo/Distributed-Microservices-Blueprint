@@ -4,7 +4,7 @@ For Python, there a quite few Git examples utilizing Fast API as a library but a
 
 This pattern provides a modern pipeline approach for execution of different type of http commands/querries and is used to provide added scalability when the applicaiton is deployed to Azure AKS or any other containerized eco-systems.
 
-Reference: https://microservices.io/patterns/data/saga.html
+Reference: https://microservices.io/patterns/data/saga.html and https://github.com/eventuate-tram/eventuate-tram-core
 
 
 
