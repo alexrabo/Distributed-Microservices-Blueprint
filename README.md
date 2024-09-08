@@ -7,9 +7,9 @@ This pattern provides a modern pipeline approach for execution of different type
 Reference: https://microservices.io/patterns/data/saga.html and https://github.com/eventuate-tram/eventuate-tram-core
 
 
-## Problem Statement
+## Scope for the project
 *  Develop distributed mico-services for managing hotel reservations, check-ins, upgrades and potential machine learning integration for seasonal predictions.
-## The core ideas used in this blueprint: 
+## The core technololgy covered by blueprint: 
 * CQRS (Command Query Responsibility Segregation) for execution of HTTPs requests.
 * Event Sourcing and Event Store for both event notification and event publishing.
 * Middleware Pattern - for logging, authenticaion with OpenID, request throttoling.
